@@ -71,7 +71,8 @@ enumerated in the RFC 5033 update. The following are specifically in scope:
 * Algorithms mature enough for standardization. CONGRESS may consider not
 only the open internet, but also algorithms focused on Data Centers, “Controlled
 environments”, Multipath, and Internet of Things use cases. Any adopted
-document must be clear about the domains to which its operation is restricted.
+document must be clear about the domains to which its operation is restricted,
+and any such restriction requires approval of the Responsible AD.
 
 * Algorithms proposed for Experimental status, in consultation with ICCRG.
 
@@ -88,7 +89,8 @@ generally remain in the working group for that protocol (i.e.. TCPM, QUIC,
 TSVWG).
 
 Informational RFCs documenting the state of congestion control in the internet,
-including assessments of compliance with existing standards, are out of scope.
+including assessments of compliance with existing standards, are out of scope,
+but may be appropriate for the IRTF.
 
 Real-time, media adaptation algorithms for peer to peer communication remain the
 focus of RMCAT and are not in scope unless that group closes. However, proposals

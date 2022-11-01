@@ -1,5 +1,4 @@
-﻿Congestion Control and Loss Recovery (CCLR) Working Group charter
-Alternate Name: Congestion and Loss Estimation, Adaptation, and Recovery (CLEAR)
+﻿CONGestionRESponse and Signaling Working Group Charter (CONGRESS)
 
 The IETF has long been responsible for standardizing congestion control and loss
 recovery algorithms on the internet. Traditionally, TCP was the user of these
@@ -8,14 +7,14 @@ Maintenance (TCPM) or Transport and Services (TSVWG) working group. When this
 workflow was established, proposals typically emerged from research groups that
 had limited ability and experience with running large scale tests to understand
 the implications of their proposals. RFC5033 describes a Best Current Practice
-to evaluate proposals for new congestion control algorithms to be evaluated for
-Experimental or Proposed Standard RFCs. Meanwhile, tweaks to the loss recovery
-standards have continued in TCPM.
+to evaluate proposals for new congestion control algorithms as Experimental or
+Proposed Standard RFCs. Meanwhile, tweaks to the loss recovery standards have
+continued in TCPM.
 
 In the IRTF, the Internet Congestion Control Research Group (ICCRG) has invited
 talks on congestion control research and developments. Historically, it has not
-produced documents despite the availability of the IRTF stream for Experimental
-RFCs, although it may be rechartered to do so.
+produced documents despite the availability of the IRTF stream for Informational
+and Experimental RFCs.
 
 Over the last few years, several developments have raised questions about the
 value of this model:
@@ -51,8 +50,8 @@ traffic today.
 
 A separate working group can review some of the impediments to early congestion
 control work occurring in the IETF, and generalize transport in this area from
-TCP to all the relevant transport protocols. Accordingly, CCLR is chartered to
-do the following work:
+TCP to all the relevant transport protocols. Accordingly, CONGRESS is chartered
+to do the following work:
 
 * Conduct a review of RFC5033 and consider a revision that relaxes requirements
 to encourage more experiments in the IRTF/IETF. Coordinate with ICCRG to
@@ -64,19 +63,16 @@ regarding intent to deploy by major transport implementations.
 might establish norms for when protocol-specific considerations are minor enough
 to include in the base document, or protocol-specific documents are needed.
 
-* TCPM will soon publish CUBIC as a TCP Proposed Standard. Apply the framework
-above to adapt this specification to SCTP, QUIC, and DCCP.
+While this charter does not specify further deliverables, CONGRESS is authorized
+to adopt other work relating to Congestion Control and Active Queue Management
+(AQM) without rechartering. This work may be ongoing in TCPM, CORE, ICCRG, or
+elsewhere, and if so, coordination is required to decide between adoption of the
+work and consultation on it, based on its maturity, the quality of relevant
+review in either venue, and its match with the CONGRESS adoption criteria. The
+following are specifically in scope:
 
-While this charter does not specify further deliverables, CCLR is authorized to
-adopt other work relating to Loss Recovery and Congestion Control without
-rechartering. This work may be ongoing in TCPM, CORE, ICCRG, or elsewhere, and
-if so, coordination is required to decide between adoption of the work and
-consultation on it, based on its maturity, the quality of relevant review in
-either venue, and its match with the CCLR adoption criteria. The following are
-specifically in scope:
-
-* New algorithms mature enough for standardization. CCLR may consider not only
-the open internet, but also algorithms focused on Data Centers, “Controlled
+* New algorithms mature enough for standardization. CONGRESS may consider not
+only the open internet, but also algorithms focused on Data Centers, “Controlled
 environments”, Multipath, and Internet of Things use cases. Any adopted
 document must be clear about the domains to which its operation is restricted.
 Maturity can be judged on empirical evidence that the algorithm is safe and
@@ -85,7 +81,7 @@ the algorithm at scale.
 
 * Tweaks to existing algorithms, such as Slow Start.
 
-* New ways for endpoint to respond to both implicit and explicit congestion
+* New ways for endpoints to respond to both implicit and explicit congestion
 signals.
 
 * Progression of existing Informational or Experimental RFCs to higher maturity,
@@ -95,13 +91,17 @@ Proposals that depend on the capabilities of a single transport protocol should
 generally remain in the working group for that protocol (i.e.. TCPM, QUIC,
 TSVWG).
 
+Informational RFCs documenting the state of congestion control in the internet,
+including assessments of compliance with existing standards, are out of scope
+and should be produced in ICCRG.
+
 Interactive real-time, media adaptation algorithms for peer to peer
 communication remain the focus of RMCAT and are not in scope. However, some
 proposals for live streaming media adaptation may be applicable to both general
-purpose and to RMCAT use cases, in which case CCLR can adopt them in
+purpose and to RMCAT use cases, in which case CONGRESS can adopt them in
 consultation with RMCAT.
 
-Once the deliverables are complete, CCLR will not remain open simply “in case”
-further work comes along. However, if the working group has adopted further
-work in accordance with the guidelines above, it can recharter, add milestones
-for them, and continue until that work is complete.
+Once the deliverables are complete, CONGRESS will not remain open simply “in
+case” further work comes along. However, if the working group has adopted
+further work in accordance with the guidelines above, it can recharter, add
+milestones for them, and continue until that work is complete.

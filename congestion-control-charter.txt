@@ -1,15 +1,14 @@
 ﻿CONGestionRESponse and Signaling Working Group Charter (CONGRESS)
 
-The IETF has long been responsible for standardizing congestion control and loss
-recovery algorithms on the internet. Traditionally, TCP was the user of these
-congestion controls and new work on these subjects occurred in the TCP
-Maintenance (TCPM) or Transport and Services (TSVWG) working group. When this
-workflow was established, proposals typically emerged from research groups that
+The IETF has long been responsible for standardizing congestion control and
+active queue management (AQM) algorithms on the internet. Traditionally, new
+work on these subjects occurred in the TCP Maintenance (TCPM) or Transport and
+Services (TSVWG) working group. RFC 5033 describes a Best Current Practice to
+evaluate proposals for new congestion control algorithms as Experimental or
+Proposed Standard RFCs. When this workflow was established, TCP was the dominant
+consumer of this work, andproposals typically emerged from research groups that
 had limited ability and experience with running large scale tests to understand
-the implications of their proposals. RFC5033 describes a Best Current Practice
-to evaluate proposals for new congestion control algorithms as Experimental or
-Proposed Standard RFCs. Meanwhile, tweaks to the loss recovery standards have
-continued in TCPM.
+the implications of their proposals.
 
 In the IRTF, the Internet Congestion Control Research Group (ICCRG) has invited
 talks on congestion control research and developments. Historically, it has not
@@ -29,9 +28,9 @@ controls: TCP, QUIC, SCTP, and DCCP. Non-TCP transports usually require their
 own mechanism to adapt to TCP or TCP friendly congestion controls. Genuinely new
 proposals tend to be done in reference to TCP only.
 
-* Although numerous RFCs specify tweaks to congestion control and loss recovery,
-the IETF has not published an Experimental RFC documenting a new general-purpose
-congestion control since RFC 4782 in 2007.
+* Although numerous RFCs tweak existing algorithms, the IETF has not published
+an Experimental RFC documenting a new general-purpose congestion control since
+RFC 4782 in 2007.
 
 * Among the most widely-deployed congestion controls today is Cubic, which was
 developed without formal IETF review, deployed at scale (including as the
@@ -39,14 +38,11 @@ default in the Linux kernel and others), and much later acknowledged in
 Informational RFC 8312 (a process to ratify the existing Cubic design as a
 proposed standard, after the fact, is underway in TCPM).
 
-* Large organizations that control their own transport implementations can and
-do experiment with new congestion control concepts without conducting IETF
-review, and generally present results from experiments at scale prior to any
-such review.
+* Large organizations control their own transport implementations and experiment
+with new congestion control concepts at scale before conducting IETF review.
 
-* As the only Standards-Track general-purpose congestion control remains Reno,
-other IETF standards reference it even though it is a small minority of internet
-traffic today.
+* As the only Standards-Track general-purpose congestion control is Reno, other
+standards reference it, although it is a minority of internet traffic today.
 
 A separate working group can review some of the impediments to early congestion
 control work occurring in the IETF, and generalize transport in this area from
@@ -54,30 +50,30 @@ TCP to all the relevant transport protocols. Accordingly, CONGRESS is chartered
 to do the following work:
 
 * Conduct a review of RFC5033 and consider a revision that relaxes requirements
-to encourage more experiments in the IRTF/IETF. Coordinate with ICCRG to
-determine a proper division of labor between IRTF stream and IETF stream
-documents. For adoption of standards-track work, there should be a high bar
-regarding intent to deploy by major transport implementations.
+to encourage more experiments in the IRTF/IETF. Adoption of standards-track
+work should consider empirical evidence of safety and stated intent to deploy by
+major transport implementations.
 
-* Devise a framework for specifying congestion controls agnostic to protocol. It
-might establish norms for when protocol-specific considerations are minor enough
-to include in the base document, or protocol-specific documents are needed.
+* Define a conceptual framework for describing abstract algorithms that can have
+concrete instantiations for each transport, and an approach to documenting each.
+This might include norms for when protocol-specific considerations are minor
+enough to include in the base document, or protocol-specific documents are
+needed.
 
 While this charter does not specify further deliverables, CONGRESS is authorized
 to adopt other work relating to Congestion Control and Active Queue Management
 (AQM) without rechartering. This work may be ongoing in TCPM, CORE, ICCRG, or
 elsewhere, and if so, coordination is required to decide between adoption of the
 work and consultation on it, based on its maturity, the quality of relevant
-review in either venue, and its match with the CONGRESS adoption criteria. The
-following are specifically in scope:
+review in either venue, and its match with the CONGRESS adoption criteria to be
+enumerated in the RFC 5033 update. The following are specifically in scope:
 
-* New algorithms mature enough for standardization. CONGRESS may consider not
+* Algorithms mature enough for standardization. CONGRESS may consider not
 only the open internet, but also algorithms focused on Data Centers, “Controlled
 environments”, Multipath, and Internet of Things use cases. Any adopted
 document must be clear about the domains to which its operation is restricted.
-Maturity can be judged on empirical evidence that the algorithm is safe and
-beneficial to endpoints, as well as stated intent from stakeholders to deploy
-the algorithm at scale.
+
+* Algorithms proposed for Experimental status, in consultation with ICCRG.
 
 * Tweaks to existing algorithms, such as Slow Start.
 
@@ -92,14 +88,13 @@ generally remain in the working group for that protocol (i.e.. TCPM, QUIC,
 TSVWG).
 
 Informational RFCs documenting the state of congestion control in the internet,
-including assessments of compliance with existing standards, are out of scope
-and should be produced in ICCRG.
+including assessments of compliance with existing standards, are out of scope.
 
-Interactive real-time, media adaptation algorithms for peer to peer
-communication remain the focus of RMCAT and are not in scope. However, some
-proposals for live streaming media adaptation may be applicable to both general
-purpose and to RMCAT use cases, in which case CONGRESS can adopt them in
-consultation with RMCAT.
+Real-time, media adaptation algorithms for peer to peer communication remain the
+focus of RMCAT and are not in scope unless that group closes. However, proposals
+for live streaming media adaptation may be applicable to both general purpose
+and to RMCAT use cases, in which case CONGRESS can adopt them in consultation
+with RMCAT.
 
 Once the deliverables are complete, CONGRESS will not remain open simply “in
 case” further work comes along. However, if the working group has adopted

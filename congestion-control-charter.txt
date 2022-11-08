@@ -39,7 +39,9 @@ Informational RFC 8312 (a process to ratify the existing Cubic design as a
 proposed standard, after the fact, is underway in TCPM).
 
 * Large organizations control their own transport implementations and experiment
-with new congestion control concepts at scale before conducting IETF review. Some of these proposals, published as RFCs (e.g., RFC8257 for DCTCP), target specifc closed domains such as data centers. 
+with new congestion control concepts at scale before conducting IETF review. 
+Some of these proposals, published as RFCs (e.g., RFC8257 for DCTCP), target 
+specifc closed domains such as data centers. 
 
 * As the only Standards-Track general-purpose congestion control is Reno, other
 standards reference it, although it is a minority of Internet traffic today.
@@ -61,11 +63,12 @@ enough to include in the base document, or protocol-specific documents are
 needed.
 
 While this charter does not specify further deliverables, CONGRESS is authorized
-to adopt other work relating to Congestion Control and AQM without rechartering. This work may be ongoing in TCPM, CORE, ICCRG, or
-elsewhere, and if so, coordination is required to decide between adoption of the
-work and consultation on it, based on its maturity, the quality of relevant
-review in either venue, and its match with the CONGRESS adoption criteria to be
-enumerated in the RFC 5033 update. The following are specifically in scope:
+to adopt other work relating to Congestion Control and AQM without rechartering. 
+This work may be ongoing in TCPM, CORE, ICCRG, or elsewhere, and if so, 
+coordination is required to decide between adoption of the work and consultation 
+on it, based on its maturity, the quality of relevant review in either venue, 
+and its match with the CONGRESS adoption criteria to be enumerated in the 
+RFC 5033 update. The following are specifically in scope:
 
 * Algorithms mature enough for standardization. CONGRESS may consider not
 only the open internet, but also algorithms focused on Data Centers, “Controlled

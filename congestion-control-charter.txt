@@ -40,8 +40,8 @@ proposed standard, after the fact, is underway in TCPM).
 
 * Large organizations control their own transport implementations and experiment
 with new congestion control concepts at scale before conducting IETF review. 
-Some of these proposals, published as RFCs (e.g., RFC8257 for DCTCP), target 
-specifc closed domains such as data centers. 
+Some of these proposals, published as RFCs (e.g., RFC8257 for DCTCP), target
+specific closed domains such as data centers. 
 
 * As the only Standards-Track general-purpose congestion control is Reno, other
 standards reference it, although it is a minority of Internet traffic today.

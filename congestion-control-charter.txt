@@ -18,7 +18,7 @@ and Experimental RFCs.
 Over the last few years, several developments have raised questions about the
 value of this model:
 
-* The community working on congestion control, both industry and academia, now
+* The community working on congestion control and AQM, both industry and academia, now
 has a much better understanding of the problem space, the likely issues, and how
 to conduct large-scale tests to validate new designs. The degree of caution IETF
 needs is lower, because our understanding has improved.
@@ -39,17 +39,22 @@ Informational RFC 8312 (a process to ratify the existing Cubic design as a
 proposed standard, after the fact, is underway in TCPM).
 
 * Large organizations control their own transport implementations and experiment
-with new congestion control concepts at scale before conducting IETF review. Some 
-of these proposals, published as RFCs (e.g., RFC8257 for DCTCP), target specifc 
-closed domains such as data centers. 
+with new congestion control concepts at scale before conducting IETF review. 
+Some of these proposals, published as RFCs (e.g., RFC8257 for DCTCP), target
+specific closed domains such as data centers. 
 
 * As the only Standards-Track general-purpose congestion control is Reno, other
 standards reference it, although it is a minority of Internet traffic today.
 
+* Some AQM algorithms that were originally published on the experimental track 
+are becoming widely deployed. However, the original specifications do not 
+always include more recent improvements and operational aspects.
+
 A separate working group can review some of the impediments to early congestion
 control work occurring in the IETF, and generalize transport in this area from
-TCP to all the relevant transport protocols. Accordingly, CONGRESS is chartered
-to do the following work:
+TCP to all the relevant transport protocols. The congestion control expertise in 
+the working group would also make it a natural venue to take on any work on AQM 
+algorithms. Accordingly, CONGRESS is chartered to do the following work:
 
 * Conduct a review of RFC5033 and consider a revision that relaxes requirements
 to encourage more experiments in the IRTF/IETF. Adoption of standards-track
@@ -64,11 +69,11 @@ needed.
 
 While this charter does not specify further deliverables, CONGRESS is authorized
 to adopt other work relating to Congestion Control and AQM without rechartering. 
-This work may be ongoing in TCPM, CORE, ICCRG, or
-elsewhere, and if so, coordination is required to decide between adoption of the
-work and consultation on it, based on its maturity, the quality of relevant
-review in either venue, and its match with the CONGRESS adoption criteria to be
-enumerated in the RFC 5033 update. The following are specifically in scope:
+This work may be ongoing in TCPM, CORE, ICCRG, or elsewhere, and if so, 
+coordination is required to decide between adoption of the work and consultation 
+on it, based on its maturity, the quality of relevant review in either venue, 
+and its match with the CONGRESS adoption criteria to be enumerated in the 
+RFC 5033 update. The following are specifically in scope:
 
 * Algorithms mature enough for standardization. CONGRESS may consider not
 only the open internet, but also algorithms focused on Data Centers, “Controlled

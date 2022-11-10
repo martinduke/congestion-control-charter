@@ -1,59 +1,29 @@
 ﻿CONGestion RESponse and Signaling Working Group Charter (CONGRESS)
 
-The IETF has long been responsible for standardizing  Congestion Control and
-Active Queue Management (AQM) algorithms on the Internet. Conventionally, new
-work on these subjects occurred in the TCP Maintenance (TCPM) or Transport and
-Services (TSVWG) working groups. RFC 5033 describes a Best Current Practice to
-evaluate proposals for new congestion control algorithms as Experimental or
+Work on congestion control usually occurs in the TCP Maintenance (TCPM) or
+Transport and Services (TSVWG) working groups. RFC 5033 describes a Best Current
+Practice to evaluate new congestion control algorithms as Experimental or
 Proposed Standard RFCs. When this workflow was established, TCP was the dominant
 consumer of this work, and proposals typically emerged from research groups that
 had limited ability and experience with running large scale tests to understand
 the implications of their proposals.
 
 In the IRTF, the Internet Congestion Control Research Group (ICCRG) has invited
-talks on congestion control research and developments. Historically, it has not
-produced documents despite the availability of the IRTF stream for Informational
-and Experimental RFCs.
+talks on congestion control research, but has only rarely published RFCs despite
+the authority to produce Informational and Experimental ones.
 
-Over the last few years, several developments have raised questions about the
-value of this model:
-
-* The community working on congestion control and AQM, both industry and academia, now
-has a much better understanding of the problem space, the likely issues, and how
-to conduct large-scale tests to validate new designs. The degree of caution IETF
-needs is lower, because our understanding has improved.
-
-* IETF has standardized four transport protocols that use TCP-like congestion
-controls: TCP, QUIC, SCTP, and DCCP. Non-TCP transports usually require their
-own mechanism to adapt to TCP or TCP friendly congestion controls. Genuinely new
-proposals tend to be done in reference to TCP only.
-
-* Although numerous RFCs tweak existing algorithms, the IETF has not published
-an Experimental RFC documenting a new general-purpose congestion control since
-RFC 4782 in 2007.
-
-* Among the most widely-deployed congestion controls today is Cubic, which was
-developed without formal IETF review, deployed at scale (including as the
-default in the Linux kernel and others), and much later acknowledged in
-Informational RFC 8312 (a process to ratify the existing Cubic design as a
-proposed standard, after the fact, is underway in TCPM).
-
-* Large organizations control their own transport implementations and experiment
-with new congestion control concepts at scale before conducting IETF review. 
-Some of these proposals, published as RFCs (e.g., RFC8257 for DCTCP), target
-specific closed domains such as data centers. 
-
-* As the only Standards-Track general-purpose congestion control is Reno, other
-standards reference it, although it is a minority of Internet traffic today.
-
-* Some AQM algorithms that were originally published on the experimental track 
-are becoming widely deployed. However, the original specifications do not 
-always include more recent improvements and operational aspects.
+Since RFC 5033 was published, many of these conditions have changed. Proponents
+often have the opportunity to test and deploy at scale without IETF review. The
+set of protocols using these algorithms has spread beyond TCP and SCTP to
+include DCCP, QUIC, and beyond. There is more interest in specialized use cases
+such as data centers and real-time protocols. Finally, the community has gained
+much more experience with indications of congestion beyond packet loss.
 
 A separate working group can review some of the impediments to early congestion
 control work occurring in the IETF, and generalize transport in this area from
 TCP to all the relevant transport protocols. The congestion control expertise in 
-the working group would also make it a natural venue to take on any work on AQM 
+the working group would also make it a natural venue to take on other work
+related to indications of congestion, such as delay, and any work on AQM 
 algorithms. Accordingly, CONGRESS is chartered to do the following work:
 
 * Conduct a review of RFC5033 and consider a revision that relaxes requirements

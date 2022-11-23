@@ -23,17 +23,18 @@ A separate working group can review some of the impediments to early congestion
 control work occurring in the IETF, and generalize transport in this area from
 TCP to all the relevant transport protocols. The congestion control expertise in 
 the working group would also make it a natural venue to take on other work
-related to indications of congestion, such as delay, and any work on AQM 
-algorithms. Accordingly, CONGRESS is chartered to do the following work:
+related to indications of congestion, such as delay, and any work on Active 
+Queue Management (AQM) algorithms. Accordingly, CONGRESS is chartered to do the
+following work:
 
-* Conduct a review of RFC5033 and consider a revision that relaxes requirements
-to encourage more experiments in the IRTF/IETF. Adoption of standards-track
-work should consider empirical evidence of safety and stated intent to deploy by
-major transport implementations.
+* Conduct a review of RFC 5033 and consider a revision that relaxes requirements
+to encourage more experiments in the IRTF/IETF. Adoption of Standards Track
+items should consider empirical evidence of (1) safety for the intended applicability 
+scope and (2) stated intent to deploy by major transport implementations.
 
 * Define a conceptual framework for describing abstract algorithms that can have
 concrete instantiations for each transport, and an approach to documenting each.
-This might include norms for when protocol-specific considerations are minor
+This might include criteria for when protocol-specific considerations are minor
 enough to include in the base document, or protocol-specific documents are
 needed.
 
@@ -43,10 +44,10 @@ This work may be ongoing in TCPM, CORE, ICCRG, or elsewhere, and if so,
 coordination is required to decide between adoption of the work and consultation 
 on it, based on its maturity, the quality of relevant review in either venue, 
 and its match with the CONGRESS adoption criteria to be enumerated in the 
-RFC 5033 update. The following are specifically in scope:
+RFC 5033 update. The following items are specifically in scope:
 
 * Algorithms mature enough for standardization. CONGRESS may consider not
-only the open internet, but also algorithms focused on Data Centers, “Controlled
+only the open Internet, but also algorithms focused on Data Centers, “Controlled
 environments”, Multipath, and Internet of Things use cases. Any adopted
 document must be clear about the domains to which its operation is restricted,
 and any such restriction requires approval of the Responsible AD.
@@ -64,20 +65,21 @@ if they meet the criteria.
 * Operational guidance, in general. 
 
 Proposals that depend on the capabilities of a single transport protocol should
-generally remain in the maintenance working group for that protocol (i.e., TCPM, QUIC,
-TSVWG).
+generally remain in the maintenance working group for that protocol (e.g., TCPM, 
+QUIC, TSVWG).
 
-Informational RFCs documenting the state of congestion control in the Internet,
-including assessments of compliance with existing standards, are out of scope,
-but may be appropriate for the IRTF.
+CONGRESS is not chartered to publish Informational RFCs documenting the state
+of congestion control in the Internet, including assessments of compliance 
+with existing standards. Venues, e.g., IRTF, may be more appropriate for
+publishing such documents.
 
-Real-time, media adaptation algorithms for peer to peer communication remain the
-focus of RMCAT and are not in scope unless that group closes. However, proposals
+Real-time, media adaptation algorithms for peer to peer communications remain the
+focus of RMCAT and are not in scope unless that WG closes. However, proposals
 for live streaming media adaptation may be applicable to both general purpose
 and to RMCAT use cases, in which case CONGRESS can adopt them in consultation
 with RMCAT.
 
-Once the deliverables are complete, CONGRESS will not remain open simply “in
-case” further work comes along. However, if the working group has adopted
-further work in accordance with the guidelines above, it can recharter, add
-milestones for them, and continue until that work is complete.
+Once the chartered deliverables are complete, CONGRESS will not remain open 
+simply “in case” further work comes along. However, if the working group has
+adopted further work in accordance with the guidelines above, it can 
+recharter, add milestones for them, and continue until that work is complete.

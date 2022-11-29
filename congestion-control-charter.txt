@@ -65,7 +65,8 @@ if they meet the criteria.
 * Operational guidance, in general. 
 
 Proposals that depend on the capabilities of a single transport protocol should
-generally remain in the maintenance working group for that protocol (e.g., TCPM, 
+generally remain in the maintenance working group for that protocol (i.e., TCPM, 
+
 QUIC, TSVWG).
 
 CONGRESS is not chartered to publish Informational RFCs documenting the state

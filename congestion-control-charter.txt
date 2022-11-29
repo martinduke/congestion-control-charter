@@ -29,7 +29,8 @@ following work:
 
 * Conduct a review of RFC 5033 and consider a revision that relaxes requirements
 to encourage more experiments in the IRTF/IETF. Adoption of Standards Track
-items should consider empirical evidence of (1) safety for the intended applicability 
+items should consider (1) empirical evidence of  safety for the intended applicability 
+
 scope and (2) stated intent to deploy by major transport implementations.
 
 * Define a conceptual framework for describing abstract algorithms that can have

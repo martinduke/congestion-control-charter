@@ -28,8 +28,8 @@ algorithms.
 
 Accordingly, CONGRESS is chartered to conduct a review of RFC 5033 and consider
 a revision that relaxes requirements to encourage more experiments in
-the IRTF/IETF. Adoption of standards-track work should consider empirical
-evidence of safety and stated intent to deploy by major transport
+the IRTF/IETF. Adoption of standards-track work should consider (1) empirical
+evidence of safety and (2) stated intent to deploy by major transport
 implementations.
 
 While this charter does not specify further deliverables, CONGRESS is authorized
@@ -41,7 +41,7 @@ and its match with the CONGRESS adoption criteria to be enumerated in the
 RFC 5033 update. The following are specifically in scope:
 
 * Algorithms mature enough for standardization. CONGRESS may consider not
-only the open internet, but also algorithms focused on Data Centers, “Controlled
+only the open Internet, but also algorithms focused on Data Centers, “Controlled
 environments”, Multipath, and Internet of Things use cases. Any adopted
 document must be clear about the domains to which its operation is restricted,
 and any such restriction requires approval of the Responsible AD.
@@ -69,17 +69,18 @@ TCPM, QUIC, TSVWG). Documents in CONGRESS should remain as independent of
 transport protocol as possible, but they might have short specific instructions
 (e.g. a header option or parameter format) for one or more protocols.
 
-Informational RFCs documenting the state of congestion control in the Internet,
-including assessments of compliance with existing standards, are out of scope,
-but may be appropriate for the IRTF.
+CONGRESS is not chartered to publish Informational RFCs documenting the state
+of congestion control in the Internet, including assessments of compliance 
+with existing standards. Venues, e.g., IRTF, may be more appropriate for
+publishing such documents.
 
-Real-time, media adaptation algorithms for peer to peer communication remain the
-focus of RMCAT and are not in scope unless that group closes. However, proposals
+Real-time, media adaptation algorithms for peer to peer communications remain the
+focus of RMCAT and are not in scope unless that WG closes. However, proposals
 for live streaming media adaptation may be applicable to both general purpose
 and to RMCAT use cases, in which case CONGRESS can adopt them in consultation
 with RMCAT.
 
-Once the deliverables are complete, CONGRESS will not remain open simply “in
-case” further work comes along. However, if the working group has adopted
-further work in accordance with the guidelines above, it can recharter, add
-milestones for them, and continue until that work is complete.
+Once the chartered deliverables are complete, CONGRESS will not remain open 
+simply “in case” further work comes along. However, if the working group has
+adopted further work in accordance with the guidelines above, it can 
+recharter, add milestones for them, and continue until that work is complete.

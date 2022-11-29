@@ -21,28 +21,23 @@ much more experience with indications of congestion beyond packet loss.
 
 A separate working group can review some of the impediments to early congestion
 control work occurring in the IETF, and generalize transport in this area from
-TCP to all the relevant transport protocols. The congestion control expertise in 
+TCP to all the relevant transport protocols. The congestion control expertise in
 the working group would also make it a natural venue to take on other work
-related to indications of congestion, such as delay, and any work on AQM 
-algorithms. Accordingly, CONGRESS is chartered to do the following work:
+related to indications of congestion, such as delay, and potentially AQM
+algorithms.
 
-* Conduct a review of RFC5033 and consider a revision that relaxes requirements
-to encourage more experiments in the IRTF/IETF. Adoption of standards-track
-work should consider empirical evidence of safety and stated intent to deploy by
-major transport implementations.
-
-* Define a conceptual framework for describing abstract algorithms that can have
-concrete instantiations for each transport, and an approach to documenting each.
-This might include norms for when protocol-specific considerations are minor
-enough to include in the base document, or protocol-specific documents are
-needed.
+Accordingly, CONGRESS is chartered to conduct a review of RFC 5033 and consider
+a revision that relaxes requirements to encourage more experiments in
+the IRTF/IETF. Adoption of standards-track work should consider empirical
+evidence of safety and stated intent to deploy by major transport
+implementations.
 
 While this charter does not specify further deliverables, CONGRESS is authorized
-to adopt other work relating to Congestion Control and AQM without rechartering. 
-This work may be ongoing in TCPM, CORE, ICCRG, or elsewhere, and if so, 
-coordination is required to decide between adoption of the work and consultation 
-on it, based on its maturity, the quality of relevant review in either venue, 
-and its match with the CONGRESS adoption criteria to be enumerated in the 
+to adopt other work relating to Congestion Control and AQM without rechartering.
+This work may be ongoing in TCPM, CORE, ICCRG, or elsewhere, and if so,
+coordination is required to decide between adoption of the work and consultation
+on it, based on its maturity, the quality of relevant review in either venue,
+and its match with the CONGRESS adoption criteria to be enumerated in the
 RFC 5033 update. The following are specifically in scope:
 
 * Algorithms mature enough for standardization. CONGRESS may consider not
@@ -51,12 +46,17 @@ environments”, Multipath, and Internet of Things use cases. Any adopted
 document must be clear about the domains to which its operation is restricted,
 and any such restriction requires approval of the Responsible AD.
 
-* Algorithms proposed for Experimental status, in consultation with ICCRG.
+* Algorithms proposed for Experimental status, in consultation with ICCRG, based
+on an assessment of their maturity and likelihood of near-term wide-scale
+deployment.
+
+* AQM algorithms, in consultation with TSVWG, based on the available time and
+reviewing expertise in both groups.
 
 * Tweaks to existing algorithms, such as Slow Start.
 
 * New ways for endpoints to respond to both implicit and explicit congestion
-signals.
+signals, including specification of explicit signals.
 
 * Progression of existing Informational or Experimental RFCs to higher maturity,
 if they meet the criteria.
@@ -64,8 +64,10 @@ if they meet the criteria.
 * Operational guidance, in general. 
 
 Proposals that depend on the capabilities of a single transport protocol should
-generally remain in the maintenance working group for that protocol (i.e., TCPM, QUIC,
-TSVWG).
+generally remain in the maintenance working group for that protocol (i.e.,
+TCPM, QUIC, TSVWG). Documents in CONGRESS should remain as independent of
+transport protocol as possible, but they might have short specific instructions
+(e.g. a header option or parameter format) for one or more protocols.
 
 Informational RFCs documenting the state of congestion control in the Internet,
 including assessments of compliance with existing standards, are out of scope,

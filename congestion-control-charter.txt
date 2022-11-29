@@ -50,9 +50,8 @@ and any such restriction requires approval of the Responsible AD.
 on an assessment of their maturity and likelihood of near-term wide-scale
 deployment.
 
-* AQM algorithms, in consultation with TSVWG, based on the available time in
-both groups and the extent that the algorithm requires changes to congestion
-control.
+* AQM algorithms, in consultation with TSVWG, based on the available time and
+reviewing expertise in both groups.
 
 * Tweaks to existing algorithms, such as Slow Start.
 

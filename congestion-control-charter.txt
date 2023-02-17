@@ -9,8 +9,8 @@ had limited ability and experience with running large scale tests to understand
 the implications of their proposals.
 
 In the IRTF, the Internet Congestion Control Research Group (ICCRG) has invited
-talks on congestion control research, but has only rarely published RFCs despite
-the authority to produce Informational and Experimental ones.
+talks on congestion control research, but has only rarely published documents
+despite the authority to produce Informational and Experimental RFCs.
 
 Since RFC 5033 was published, many of these conditions have changed. Proponents
 often have the opportunity to test and deploy at scale without IETF review. The
@@ -19,15 +19,15 @@ include DCCP, QUIC, and beyond. There is more interest in specialized use cases
 such as data centers and real-time protocols. Finally, the community has gained
 much more experience with indications of congestion beyond packet loss.
 
-A separate working group can review some of the impediments to early congestion
-control work occurring in the IETF, and generalize transport in this area from
-TCP to all the relevant transport protocols. The congestion control expertise in
-the working group would also make it a natural venue to take on other work
-related to indications of congestion, such as delay, and potentially AQM
-algorithms.
+The CONGestion RESponse and Signaling working group (CONGRESS) can review some
+of the impediments to early congestion control work occurring in the IETF, and
+can generalize transport in this area from TCP to all of the relevant transport
+protocols. The congestion control expertise in the working group would also
+make it a natural venue to take on other work related to indications of
+congestion, such as delay, and potentially AQM algorithms.
 
-Accordingly, CONGRESS is chartered to conduct a review of RFC 5033 and consider
-a revision that relaxes requirements to encourage more experiments in
+Accordingly, CONGRESS is chartered to conduct a review of RFC 5033 and to
+consider a revision that relaxes requirements to encourage more experiments in
 the IRTF/IETF. Adoption of standards-track work should consider (1) empirical
 evidence of safety and (2) stated intent to deploy by major transport
 implementations.
@@ -69,16 +69,13 @@ TCPM, QUIC, TSVWG). Documents in CONGRESS should remain as independent of
 transport protocol as possible, but they might have short specific instructions
 (e.g. a header option or parameter format) for one or more protocols.
 
-CONGRESS is not chartered to publish Informational RFCs documenting the state
-of congestion control in the Internet, including assessments of compliance 
-with existing standards. Venues, e.g., IRTF, may be more appropriate for
+CONGRESS is not chartered to publish Informational RFCs documenting the state of
+congestion control in the Internet, including assessments of compliance with
+existing standards. Other venues, e.g., IRTF, may be more appropriate for
 publishing such documents.
 
-Real-time, media adaptation algorithms for peer to peer communications remain the
-focus of RMCAT and are not in scope unless that WG closes. However, proposals
-for live streaming media adaptation may be applicable to both general purpose
-and to RMCAT use cases, in which case CONGRESS can adopt them in consultation
-with RMCAT.
+Real-time, media adaptation algorithms for peer to peer communications remain
+the focus of RMCAT, but are in scope after that WG closes.
 
 Once the chartered deliverables are complete, CONGRESS will not remain open 
 simply “in case” further work comes along. However, if the working group has

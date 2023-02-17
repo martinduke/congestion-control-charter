@@ -24,7 +24,7 @@ of the impediments to early congestion control work occurring in the IETF, and
 can generalize transport in this area from TCP to all of the relevant transport
 protocols. The congestion control expertise in the working group would also
 make it a natural venue to take on other work related to indications of
-congestion, such as delay, and potentially AQM algorithms.
+congestion, such as delay, and potentially queueing algorithms.
 
 Accordingly, CONGRESS is chartered to conduct a review of RFC 5033 and to
 consider a revision that relaxes requirements to encourage more experiments in
@@ -50,8 +50,9 @@ and any such restriction requires approval of the Responsible AD.
 on an assessment of their maturity and likelihood of near-term wide-scale
 deployment.
 
-* AQM algorithms, in consultation with TSVWG, based on the available time and
-reviewing expertise in both groups.
+* Active Queue Managment (AQM) and Fair Queueing (FQ) algorithms, in
+consultation with TSVWG, based on the available time and reviewing expertise in
+both groups.
 
 * Tweaks to existing algorithms, such as Slow Start.
 

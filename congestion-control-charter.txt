@@ -54,6 +54,8 @@ deployment.
 consultation with TSVWG, based on the available time and reviewing expertise in
 both groups.
 
+* Rate pacing, including bandwidth estimation techniques that inform it.
+
 * Tweaks to existing algorithms, such as Slow Start.
 
 * New ways for endpoints to respond to both implicit and explicit congestion

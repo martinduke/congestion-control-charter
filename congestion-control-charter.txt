@@ -41,10 +41,11 @@ and its match with the CONGRESS adoption criteria to be enumerated in the
 RFC 5033 update. The following are specifically in scope:
 
 * Algorithms mature enough for standardization. CONGRESS may consider not
-only the open Internet, but also algorithms focused on Data Centers, “Controlled
-environments”, Multipath, and Internet of Things use cases. Any adopted
-document must be clear about the domains to which its operation is restricted,
-and any such restriction requires approval of the Responsible AD.
+only the open Internet, but also algorithms focused on other deployment models
+(e.g. datacenters and other controlled environments, reduced resource
+deployments such as IoT, and so on). Any adopted document must be clear about
+the domains to which its operation is restricted, and any such restriction
+requires approval of the Responsible AD.
 
 * Algorithms proposed for Experimental status, in consultation with ICCRG, based
 on an assessment of their maturity and likelihood of near-term wide-scale

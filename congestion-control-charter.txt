@@ -66,9 +66,10 @@ signals, including specification of explicit signals.
 * Progression of existing Informational or Experimental RFCs to higher maturity,
 if they meet the criteria.
 
-* Operational guidance, in general, including advice to upper layers regarding
+* Operational guidance, in general, including advice to upper layers such as regarding
 counterproductive application retransmissions and multiple connections to the
 same host.
+
 
 Proposals that depend on the capabilities of a single transport protocol should
 generally remain in the maintenance working group for that protocol (i.e.,

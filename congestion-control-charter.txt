@@ -58,13 +58,18 @@ both groups.
 
 * Tweaks to existing algorithms, such as Slow Start.
 
+* Techniques to address lower-layer alterations to packet timing or ordering.
+
 * New ways for endpoints to respond to both implicit and explicit congestion
 signals, including specification of explicit signals.
 
 * Progression of existing Informational or Experimental RFCs to higher maturity,
 if they meet the criteria.
 
-* Operational guidance, in general. 
+* Operational guidance, in general, including advice to upper layers such as regarding
+counterproductive application retransmissions and multiple connections to the
+same host.
+
 
 Proposals that depend on the capabilities of a single transport protocol should
 generally remain in the maintenance working group for that protocol (i.e.,
@@ -80,7 +85,7 @@ publishing such documents.
 Real-time, media adaptation algorithms for peer to peer communications remain
 the focus of RMCAT, but are in scope after that WG closes.
 
-Once the chartered deliverables are complete, CONGRESS will not remain open 
+Once the chartered deliverables are complete, CONGRESS will not remain open
 simply “in case” further work comes along. However, if the working group has
-adopted further work in accordance with the guidelines above, it can 
-recharter, add milestones for them, and continue until that work is complete.
+adopted further work in accordance with the guidelines above, it can recharter,
+add milestones for them, and continue until that work is complete.

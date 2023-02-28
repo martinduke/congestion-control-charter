@@ -51,8 +51,7 @@ requires approval of the Responsible AD.
 on an assessment of their maturity and likelihood of near-term wide-scale
 deployment.
 
-* Multipath congestion control that detects when two paths share the same
-bottleneck.
+* Multipath congestion control.
 
 * Active Queue Managment (AQM) and Fair Queueing (FQ) algorithms, in
 consultation with TSVWG, based on the available time and reviewing expertise in

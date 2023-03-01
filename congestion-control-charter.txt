@@ -51,6 +51,8 @@ requires approval of the Responsible AD.
 on an assessment of their maturity and likelihood of near-term wide-scale
 deployment.
 
+* Multipath congestion control.
+
 * Active Queue Managment (AQM) and Fair Queueing (FQ) algorithms, in
 consultation with TSVWG, based on the available time and reviewing expertise in
 both groups.
@@ -67,10 +69,10 @@ signals, including specification of explicit signals.
 * Progression of existing Informational or Experimental RFCs to higher maturity,
 if they meet the criteria.
 
-* Operational guidance, in general, including advice to upper layers such as regarding
+* Operational guidance, in general, including advice to upper layers or new
+transport protocols. Examples include minimum frequency of feedback,
 counterproductive application retransmissions and multiple connections to the
 same host.
-
 
 Proposals that depend on the capabilities of a single transport protocol should
 generally remain in the maintenance working group for that protocol (i.e.,

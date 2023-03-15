@@ -28,7 +28,8 @@ the IRTF/IETF. Adoption of standards-track congestion control algorithms should 
 evidence of safety (for example - avoiding congestion collapse) and (2) stated intent to deploy by major transport
 implementations.
 
-CONGRESS is authorized to adopt works relating to Congestion Control and AQM without rechartering.
+CONGRESS is authorized to adopt work relating to Congestion Control and AQM without rechartering.
+
 This work may be ongoing in TCPM, CORE, ICCRG, or elsewhere, and if so,
 coordination is required to decide between adoption of the work and consultation
 on it, based on its maturity, the quality of relevant review in either venue,

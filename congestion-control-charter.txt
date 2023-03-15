@@ -3,7 +3,8 @@
 RFC 5033 describes a Best Current
 Practice to evaluate new congestion control algorithms as Experimental or
 Proposed Standard RFCs. TCP was the dominant
-consumer of this work, and proposals typically discussed in research groups (for example, Internet Congestion Control Research Group - ICCRG).
+consumer of this work, and proposals were typically discussed in research groups (for example, Internet Congestion Control Research Group - ICCRG).
+
 
 Since RFC 5033 was published, many conditions have changed. Congestion control algorithm proponents
 now often have the opportunity to test and deploy at scale without IETF review. The

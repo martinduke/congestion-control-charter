@@ -23,7 +23,8 @@ congestion, such as delay, and potentially queueing algorithms.
 CONGRESS is chartered to conduct a revision of RFC 5033. The working group should
 
 consider a revision that relaxes requirements to encourage more experiments in
-the IRTF/IETF. Adoption of standards-track congestion control algorithm should consider (1) empirical
+the IRTF/IETF. Adoption of standards-track congestion control algorithms should consider (1) empirical
+
 evidence of safety (for example - avoiding congestion collapse) and (2) stated intent to deploy by major transport
 implementations.
 

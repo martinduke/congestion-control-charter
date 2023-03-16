@@ -28,5 +28,6 @@ should it arise, if not suitable for the IRTF. It is chartered to consider
 proposals in this space, and given consensus to adopt, seek an immediate
 recharter regardless of the status of the initial deliverable.
 
-Upon completion of the deliverable, Congestion WG will close in the absence of
+Upon completion of its deliverables, the Congestion WG will close in the absence of
+
 suitable proposals for further work.

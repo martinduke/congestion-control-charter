@@ -5,7 +5,6 @@ Practice to evaluate new congestion control algorithms as Experimental or
 Proposed Standard RFCs. TCP was the dominant
 consumer of this work, and proposals were typically discussed in research groups (for example, Internet Congestion Control Research Group - ICCRG).
 
-
 Since RFC 5033 was published, many conditions have changed. Congestion control algorithm proponents
 now often have the opportunity to test and deploy at scale without IETF review. The
 set of protocols using these algorithms has spread beyond TCP and SCTP to
@@ -13,23 +12,20 @@ include DCCP, QUIC, and beyond. There is more interest in specialized use cases
 such as data centers and real-time protocols. Finally, the community has gained
 much more experience with indications of congestion beyond packet loss.
 
-The CONGestion RESponse and Signaling working group (CONGRESS) can review some
+The CONGestion RESponse and Signaling working group (CONGRESS) will review some
 of the impediments to early congestion control work occurring in the IETF, and
-can generalize transport in this area from TCP to all of the relevant transport
+will generalize transport in this area from TCP to all of the relevant transport
 protocols. The congestion control expertise in the working group would also
 make it a natural venue to take on other work related to indications of
 congestion, such as delay, and potentially queueing algorithms.
 
-CONGRESS is chartered to conduct a revision of RFC 5033. The working group should
-
+CONGRESS is chartered to conduct a revision of RFC 5033. The working group will
 consider a revision that relaxes requirements to encourage more experiments in
 the IRTF/IETF. Adoption of standards-track congestion control algorithms should consider (1) empirical
-
 evidence of safety (for example - avoiding congestion collapse) and (2) stated intent to deploy by major transport
 implementations.
 
 CONGRESS is authorized to adopt work relating to Congestion Control and AQM without rechartering.
-
 This work may be ongoing in TCPM, CORE, ICCRG, or elsewhere, and if so,
 coordination is required to decide between adoption of the work and consultation
 on it, based on its maturity, the quality of relevant review in either venue,
@@ -81,5 +77,4 @@ CONGRESS is not chartered to publish Informational RFCs documenting the state of
 congestion control in the Internet, including assessments of compliance with
 existing standards. Other venues, e.g., IRTF, may be more appropriate for
 publishing such documents.
-
-CONGRESS will not remain open simply “in case” further work comes along. 
+CONGRESS will close once all of its milestones have been completed.

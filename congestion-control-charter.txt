@@ -15,7 +15,8 @@ the community has gained much more experience with indications of congestion
 beyond packet loss.
 
 The Congestion working group will review some of the impediments to congestion
-control work occurring in the IETF, and can generalize transport in this area
+control work occurring in the IETF and can generalize transports
+
 from TCP to all of the relevant transport protocols. This will inform a revision
 of RFC 5033 that encourages IETF review of congestion control proposals and
 standardization of mature congestion control algorithms.

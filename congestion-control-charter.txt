@@ -14,8 +14,8 @@ in specialized use cases such as data centers and real-time protocols. Finally,
 the community has gained much more experience with indications of congestion
 beyond packet loss.
 
-The Congestion Control Working Group will review some of the impediments to congestion
-control work occurring in the IETF and can generalize transports
+The Congestion Control Working Group will review some of the impediments to 
+congestion control work occurring in the IETF and can generalize transports
 from TCP to all of the relevant transport protocols. This will inform a revision
 of RFC 5033 that encourages IETF review of congestion control proposals and
 standardization of mature congestion control algorithms.
@@ -30,5 +30,5 @@ it arise, if not suitable for the IRTF. It is chartered to consider proposals in
 this space, and given consensus to adopt, seek an immediate recharter regardless
 of the status of the initial deliverable.
 
-Upon completion of its deliverables, the Congestion Control WG will close in the absence
-of suitable proposals for further work.
+Upon completion of its deliverables, the Congestion Control WG will close in 
+the absence of suitable proposals for further work.

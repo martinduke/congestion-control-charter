@@ -25,8 +25,9 @@ queuing algorithms, rate pacing, multipath, interaction with other layers,
 among others. In particular, it can address congestion control algorithms with
 empirical evidence of safety and stated intent to deploy by major
 implementations. The working group is intended to be a home for such work, and
-it is chartered to adopt proposals in this space regardless of the status of
-the initial deliverable.
+it is chartered to adopt proposals in this space if such congestion control
+algorithms are presented before or after the completion of the initial
+deliverable (5033bis).
 
 The group will coordinate closely with other relevant working and research
 groups, including ICCRG, TCPM, QUIC, and TSVWG. Documents in CCWG will remain
@@ -39,10 +40,11 @@ Algorithms proposed for Experimental status, in consultation with ICCRG, based
 on an assessment of their maturity and likelihood of near-term wide-scale
 deployment, are in scope.
 
-CCWG is not chartered to publish Informational RFCs documenting the state of
-congestion control in the Internet, including assessments of compliance with
-existing standards. Other venues, such as the IRTF, may be more appropriate for
-publishing such documents.
+CCWG can publish Informational RFCs analyzing the published standard congestion
+control algorithms. It is not chartered to document the state of congestion
+control in the Internet, including assessments of whether any particular
+implementation complies with existing standards. Other venues, such as the
+IRTF, may be more appropriate for publishing such documents.
 
 Upon completion of its deliverables, the Congestion Control WG will close in 
 the absence of suitable proposals for further work.
@@ -50,3 +52,4 @@ the absence of suitable proposals for further work.
 # Milestones
 
   - Submit 5033bis to IESG for publication.
+  - Submit an Informational RFC analyzing the published standard congestion controllers
